@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+.nav{
+    padding: 20px 0;
+}
+
+#unorder-style{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+#unorder-style li{
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.nav-heading h3{
+    color: purple;
+    font-weight: 700;
+}
+.input-group input{
+    width: 300px;
+}
+#meal-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.meal-div{
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.meal-name{
+    font-size: 30px;
+    color: black;
+}
+.meal-div img{
+    width: 200px;
+}
+.meal-details-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:15px;
+}
+
+.meal-details-div .card{
+    width: 445px;
+}
+
+.meal-details-div .card img{
+    height: 245px;
+}
+#ingredients{
+    margin: 0px 0px 0px 15px;
+    padding: 0;
+}
+.card a{
+    text-decoration: none;
+    color: #000;
+}
+

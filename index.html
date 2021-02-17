@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container px-0">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="nav-heading">
+                        <h3>Hungry Monster</h3>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="nav-list">
+                        <ul id="unorder-style">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Recipes</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="search-button">
+            <div class="container px-0">
+                <div class="col-md-12" id="searchDiv">
+                    <div class="input-group py-5 ">
+                        <input id="input-name" type="search" class="form-control rounded" placeholder="search" aria-label="Search"
+                          aria-describedby="search-addon" />
+                        <button onclick="searchMeal()" type="button" class="btn btn-primary">search</button>
+                      </div>
+                </div>   
+                <div class="output">
+                    <div class="row" id="meal-list"></div>
+                    <div class="meal-details-div" id="mealDetail" style="display: none;">
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="api.js"></script>
+</body>
+</html>
